@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maitri</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Content from all four HTML files fully embedded -->
+  <header>
+    <a href="#home" class="logo">Maitri</a>
+    <nav>
+      <!-- <span><i class="fa-solid fa-bars"></i></span> -->
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+    <div class="icons">
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-image">
+        <img src="/images/me4.png" alt="Maitri">
+      </div>
+      <div class="text-icons">
+        <div class="hero-text">
+          <h1>Hi, I'm <span>Maitri</span> </h1>
+          <h3>Web Developer</h3>
+          <p>“With a strong foundation in HTML, CSS, and JavaScript, I create websites that
+            are not just visually appealing but also highly functional and user-friendly."</p>
+        </div>
+        
+        <div class="btn">
+          <button>Hire me</button>
+        </div>
+      </div>
+    </section>
+    <!-- about -->
+    <section id="about" class="min-h-screen flex items-center justify-center p-8 bg-white about">
+      <div class="flex flex-col md:flex-row items-center md:items-start gap-8 max-w-5xl mx-auto">
+
+        <!-- Content on the left -->
+
+        <div class="text-center md:text-left content-1">
+          <h2>About Me</h2>
+          <p class="text-lg text-gray-600 p1">Web Developer | Tech Enthusiast | Digital Explorer</p>
+        </div>
+
+        <!-- Image Slider on the right -->
+
+        <div class="image-slider rounded-2xl shadow-lg">
+          <img src="/images/download (13).png" class="slider-img active">
+          <img src="/images/download (14).png" class="slider-img">
+          <img src="/images/download (15).png" class="slider-img">
+          <img src="/images/download (16).png" class="slider-img">
+          <img src="/images/download (17).png" class="slider-img">
+        </div>
+
+        <!-- Floating Buttons for Skills & Tools -->
+
+        <div class="floating-buttons-container">
+          <button class="skill-btn" id="html-btn" data-funfact="HTML was first released in 1993!">HTML</button>
+          <button class="skill-btn" id="css-btn" data-funfact="CSS stands for Cascading Style Sheets!">CSS</button>
+          <button class="skill-btn" id="js-btn"
+            data-funfact="JavaScript was created in just 10 days!">JavaScript</button>
+
+          <button class="tool-btn" id="git-btn" data-funfact="Git was created by Linus Torvalds!">Git</button>
+          <button class="tool-btn" id="github-btn" data-funfact="GitHub was launched in 2008!">GitHub</button>
+          <button class="tool-btn" id="figma-btn" data-funfact="Figma is a web-based design tool!">Figma</button>
+          <button class="tool-btn" id="blender-btn" data-funfact="Blender started as an in-house tool!">Blender</button>
+
+          <!-- Fun Fact Box -->
+
+          <div class="funfact-box" id="funfact-box">
+            <p id="funfact-text">Hover over a button to see a fun fact!</p>
+          </div>
+        </div>
+
+        <!-- Soft Skills Section -->
+
+        <h3 class="text-xl font-semibold mt-6 softs">Soft Skills</h3>
+        <div class="flex flex-wrap gap-4 mt-4">
+          <button class="soft-skill-btn">Problem Solving</button>
+          <button class="soft-skill-btn">Teamwork</button>
+          <button class="soft-skill-btn">Leadership</button>
+          <button class="soft-skill-btn">Public Speaking</button><br>
+          <button class="soft-skill-btn">Adaptability</button>
+          <button class="soft-skill-btn">Communication</button>
+        </div>
+
+        <div class="hobbies">
+          <p class="first">When I'm not coding, I'm .....</p>
+        </div>
+
+        <div class="forhbb">
+
+
+          <div class="hbb">
+            <button class="hobbie writing">Writing</button>
+            <p class="write">a way of expressing my thoughts</p>
+          </div>
+
+          <div class="hbb">
+            <button class="hobbie sketching">Sketching</button>
+            <p class="sketch">only creativity that comes out during lectures</p>
+          </div>
+
+          <div class="hbb">
+            <button class="hobbie climbing">Rock Climbing</button>
+            <p class="climb">cause it's all fun and thrill until you realize how high up you are</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <h1>Projects</h1>
+      <div class="container swiper">
+        <div class="slider-wrapper">
+          <div class="card-list swiper-wrapper allcards">
+            <div class="card-item swiper-slide">
+              <div class="card-image">
+                <img src="/images/amazon.png" alt="" class="user-image">
+
+              </div>
+              <h2 class="user-name">Amazon Clone</h2>
+              <p class="user-profession">A feature-rich e-commerce platform with a sleek UI.</p>
+              <button class="message-button">Know more</button>
+            </div>
+
+            <div class="card-item swiper-slide">
+              <div class="card-image">
+                <img src="/images/netflix.jpg" alt="" class="user-image">
+              </div>
+              <h2 class="user-name">Netflix Clone</h2>
+              <p class="user-profession">A dynamic movie streaming platform with interactive UI.</p>
+              <button class="message-button">Know more</button>
+            </div>
+
+            <div class="card-item swiper-slide">
+              <div class="card-image">
+                <img src="/images/spotify.jpg" alt="" class="user-image .spotify-img">
+              </div>
+              <h2 class="user-name">Spotify</h2>
+              <p class="user-profession">A music streaming app with playlists and audio controls.</p>
+              <button class="message-button">Know more</button>
+            </div>
+
+            <div class="card-item swiper-slide">
+              <div class="card-image">
+                <img src="/images/lazarev.png" alt="" class="user-image">
+              </div>
+              <h2 class="user-name">Lazarev</h2>
+              <p class="user-profession">An innovative UI/UX case study for modern design trends</p>
+              <button class="message-button">Know more</button>
+            </div>
+
+            <div class="card-item swiper-slide">
+              <div class="card-image">
+                <img src="/images/patel infosys.png" alt="" class="user-image">
+              </div>
+              <h2 class="user-name">Patel Infosys</h2>
+              <p class="user-profession">A business website for IT services and solutions.</p>
+              <button class="message-button">Know more</button>
+            </div>
+
+            <div class="card-item swiper-slide">
+              <div class="card-image">
+                <img src="/images/women safety.png" alt="" class="user-image">
+              </div>
+              <h2 class="user-name">Women safety</h2>
+              <p class="user-profession">An emergency safety web app with live tracking features.</p>
+              <button class="message-button">Know more</button>
+            </div>
+
+            <div class="card-item swiper-slide">
+              <div class="card-image">
+                <img src="/images/law game.png" alt="" class="user-image">
+              </div>
+              <h2 class="user-name">Law Game</h2>
+              <p class="user-profession">An interactive legal awareness game for citizens.</p>
+              <button class="message-button">Know more</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- contact -->
+    <div class="contact" id="contact">
+      <h2>Contact Me</h2>
+      <div class="contact-container">
+        <h2>Hey there !!</h2>
+        <form id="contact-form">
+
+          <div class="f1">
+
+            <div class="f1-name">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="f1-email">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+
+          </div>
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required>
+
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit" id="submit-button">Submit</button>
+        </form>
+
+        <div id="response-message" style="display: none;">
+          <p>I'll reach out to you soon. Have a great day!</p>
+        </div>
+      </div>
+    </div>
+
+
+
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>

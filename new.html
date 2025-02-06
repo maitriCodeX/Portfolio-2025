@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/* Initially hide the <p> element inside .dd */
+.dd p {
+  display: none;
+}
+
+/* Show the <p> element inside .dd when hovering over the button inside .ff */
+.ff:hover + .dd p {
+  display: block;
+}
+
+    </style>
+</head>
+<body>
+    <div class="ff">
+    <button>fff</button>
+</div>
+<div class="dd">
+    <p>ddddddddddd</p>
+</div>
+</body>
+</html>
