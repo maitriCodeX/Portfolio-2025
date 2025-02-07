@@ -82,5 +82,27 @@ document.addEventListener('scroll', function() {
   }
 });
 
+// Social-icons
+document.addEventListener("DOMContentLoaded", function () {
+  const socialIcons = document.querySelector(".social-icons"); // Navbar icons
+  const contactSection = document.getElementById("contact"); // Contact section
 
+  if (socialIcons && contactSection) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            socialIcons.style.opacity = "1"; // Show icons
+            socialIcons.style.transform = "translateY(0)";
+          } else {
+            socialIcons.style.opacity = "0"; // Hide icons
+            socialIcons.style.transform = "translateY(-10px)"; // Smooth fade out
+          }
+        });
+      },
+      { threshold: 0.5 } // Trigger when at least 20% of the contact section is visible
+    );
 
+    observer.observe(contactSection);
+  }
+});
